@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-body, ul, li, div {
+body, ul, li, div, button {
   margin: 0;
   padding: 0;
 }
@@ -108,12 +108,88 @@ section {
   display: flex;
 }
 
+
+ /* ---- slider ---- */ 
+ #coder-designer-slider {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 42.3%;
+}
+
+.left-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.right-picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.designer-text {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  width: 30%;
+  line-height: 1.4;
+  color: red;
+  display: none;
+}
+
+.coder-text {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 30%;
+  line-height: 1.4;
+  color: red;
+  display: none;
+} 
+
+.designer-title {
+  position: absolute;
+  font-size: 1.9rem;
+  top: 4rem;
+  left: 4rem;
+  z-index: 1;
+}
+
+.designer-btn {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin-top: 2rem;
+  padding: 2px;
+  background-color: aqua;
+}
+.coder-title {
+  position: absolute;
+  font-size: 1.9rem;
+  top: 4rem;
+  right: 4rem;
+  z-index: 1;
+}
+
+.coder-btn {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin-top: 2rem;
+  padding: 2px;
+  background-color: aqua;
+}
+
 /* ---- main ---- */
 
-#slider {
-  min-height: 40vh;
-  border: 1px solid black;
-}
 
 .about-me {
   font-size: 1.3rem;
@@ -158,6 +234,7 @@ section {
   z-index: -2;
   background: #ecf0f1;
 }
+
 .bar::after{
   content: '';
   background: #2ecc71;
@@ -171,24 +248,31 @@ section {
   left: 0;
   z-index: -1;
 }
+
 .bar1::after{
   max-width: 80%;
 }
+
 .bar2::after{
   max-width: 70%;
 }
+
 .bar3::after{
   max-width: 65%;
 }
+
 .bar4::after{
   max-width: 70%;
 }
+
 .bar5::after{
   max-width: 75%;
 }
+
 .bar6::after{
   max-width: 82%;
 }
+
 @-webkit-keyframes bar-before{
   0%{
     width: 0px;
@@ -202,7 +286,7 @@ section {
 
 @media (min-width: 768px) {
   .wrapper {
-    max-width: 728px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: 10px;
   }
@@ -218,13 +302,67 @@ section {
 
 }
 
+@media (max-width: 768px) {
+  .designer-second-paragraph {
+    display: none;
+  }
+  
+  .coder-second-paragraph {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   /*---- graph ---- */
 
 .column-left, .column-right {
   width: 100%;
   }
+
+  /*---- slider ---- */
+.designer-title {
+    top: 7.25rem;
+    left: 1rem;
+    font-size: 1.7rem;
+  }
   
+  .coder-title {
+    top: 7.25rem;
+    right: 1rem;
+    font-size: 1.7rem;
+  }
+
+  #coder-designer-slider {
+    min-height: 40vh;
+    overflow: hidden;
+  }
+
+ .left-picture {
+  height: auto;
+  width: 100%;
+  left: -50%;
+ }
+ .right-picture {
+  height: auto;
+  width: 100%;
+  right: -50%;
+ }
+ .coder-text {
+   font-size: 0.9rem;
+   line-height: 1rem;
+ }
+
+ .designer-text {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+.designer-second-paragraph {
+  display: none;
+}
+
+.coder-second-paragraph {
+  display: none;
+}
 }
 
 
