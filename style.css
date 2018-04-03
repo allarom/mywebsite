@@ -74,7 +74,7 @@ box-shadow: 10px 10px 15px silver;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
 }
 
@@ -89,12 +89,14 @@ section {
   margin: 0 10px;
   width: 50px;
   height: 50px;
+  opacity: 0.6;
 }
 
 .github-icon {
   margin: 0 10px;
   width: 37px;
   height: 37px;
+  opacity: 0.6;
 }
 
 .navigation {
@@ -173,6 +175,7 @@ section {
   margin-top: 2rem;
   padding: 5px;
   background-color:  rgb(107, 128, 247);
+  color: white;
 }
 .coder-title {
   position: absolute;
@@ -180,6 +183,10 @@ section {
   top: 4rem;
   right: 4rem;
   z-index: 1;
+}
+
+.designer-h2, .coder-h2 {
+  font-size: 1.8rem;
 }
 
 #coder-btn {
@@ -191,7 +198,9 @@ section {
   margin-top: 2rem;
   padding: 5px;
   background-color: rgb(107, 128, 247);
+  color: white;
 }
+
 
 /* ---- main ---- */
 
@@ -214,7 +223,6 @@ section {
   flex-wrap: wrap;
   width: calc(100% - 40px);
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
   padding: 0;
 }
@@ -285,14 +293,10 @@ section {
   
 .image-projects {
   width: 250px;
-  height: 80px;
-  border: 1px solid black;
-  background-color: aquamarine;
+  height: auto;
 }
 
-.single-des-project {
 
-}
 
 .designer-projects {
   display: flex;
@@ -301,7 +305,7 @@ section {
 }
 
 .projects {
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(207, 207, 207);
 }
 
 @-webkit-keyframes bar-before{
@@ -344,7 +348,10 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+ /*---- mobile ---- */
+
+@media (max-width: 500px) { 
+
   /*---- graph ---- */
 
 .column-left, .column-right {
@@ -355,13 +362,25 @@ section {
 .designer-title {
     top: 7.25rem;
     left: 1rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+  }
+
+  .designer-h2, .coder-h2 {
+    text-align: center;
+    padding: 2px;
     font-size: 1.7rem;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7);
   }
   
   .coder-title {
     top: 7.25rem;
     right: 1rem;
-    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
   }
 
   #coder-designer-slider {
@@ -369,14 +388,19 @@ section {
     overflow: hidden;
   }
 
+  #coder-btn, #designer-btn {
+    font-size: 0.8rem;
+    margin-top: 3px;
+  }
+
  .left-picture {
   height: auto;
-  width: 100%;
+  width: 111%;
   left: -50%;
  }
  .right-picture {
   height: auto;
-  width: 100%;
+  width: 111%;
   right: -50%;
  }
  .coder-text {

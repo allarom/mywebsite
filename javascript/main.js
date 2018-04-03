@@ -49,17 +49,6 @@ $(function(){
     eve.stopPropagation ();
  }, true)
 
-  rightPicture.addEventListener('mouseover', function () {
-    'use strict';
-console.log('Yes, mouseover')
-    sliderContainer.removeEventListener( 'mousemove', trackLocation, true);
-  });
-
- leftPicture.addEventListener('mouseout', function () {
-    'use strict';
-console.log('Yes, mouseover')
-    sliderContainer.removeEventListener( 'mousemove', trackLocation, true);
-  });
 
   
   sliderContainer.addEventListener("mouseleave", function(  ) {   
@@ -74,39 +63,88 @@ console.log('Yes, mouseover')
   
     }, false);
 
-
-
-
     // --- Create dynamically 
 
     var desProjects = document.getElementsByClassName('designer-projects')[0];
     var sectionProjects = document.getElementsByClassName('projects')[0];
-    var designButton = document.getElementById('designer-btn');
+    var designerBtn = document.getElementById('designer-btn');
+    var coderBtn = document.getElementById('coder-btn');
+    
     var designProjects = document.createElement("div");
 
     designProjects.innerHTML =     
     ` <div class="designer-projects">
         <div class="single-des-project">
             <div class="image-projects">
-              </div>
-              <p>Placeholdertext for test</p>
+              <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
+             </div>
+             <p>Spiel über JavaScript</p>
+             <p>- 15 Fragen</p>
+             <p>- Vanilla JS</p>
+             <p>- DOM Manipulation</p>
         </div>
         <div class="single-des-project">
             <div class="image-projects">
+            <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
               </div>
-              <p>Placeholdertext for test</p>
+              <p>Finde die Bar</p>
+              <p>- Node, Express + express-ejs-layouts</p>
+              <p>- MongoDB, Mongoose</p>
+              <p>- Authorization, Authentication</p>
+              <p>- Google maps</p>
         </div>
         <div class="single-des-project">
             <div class="image-projects">
+               <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
               </div>
-              <p>Placeholdertext for test</p>
+              <p>Blog über Kunst</p>
+              <p>- Node, Express</p>
+              <p>- MongoDB, Mongoose</p>
+              <p>- Angular</p>
+              <p>- Authorization, Authentication</p>
         </div>
     </div>`;
+    var graph = document.getElementsByClassName('skills-code')[0];
+    var codeSkills = document.createElement("div");
+    codeSkills.setAttribute("class", "graph");
 
-    function addProjects() {
-        sectionProjects.appendChild(designProjects);
+    codeSkills.innerHTML =   
+    `            <div class="column-left">
+    <div class="bar bar1">HTML, CSS</div>
+    <div class="bar bar2">Vanilla JavaScript</div>
+    <div class="bar bar3">jQuery</div>
+ </div>
+  <div class="column-right">
+   <div class="bar bar4">Angular</div>
+   <div class="bar bar5">TypeScript</div>
+   <div class="bar bar6">Bootstrap</div>
+  </div>`
+    
+    var designSkills = document.createElement("div");
+    designSkills.setAttribute("class", "graph");
+    designSkills.innerHTML =   
+      `           <div class="column-left">
+      <div class="bar bar1">Foto</div>
+      <div class="bar bar2">Foto</div>
+      <div class="bar bar3">Foto</div>
+   </div>
+    <div class="column-right">
+     <div class="bar bar4">UI, UX Konzepte</div>
+     <div class="bar bar5">Photoshop</div>
+     <div class="bar bar6">Illustrator</div>
+    </div>`
+
+    function addDesignRef() {
+        $('.graph').remove();
+        graph.appendChild(designSkills);
     }
-
-    designButton.addEventListener ("click", addProjects);
+    designerBtn.addEventListener ("click", addDesignRef);
+   
+    function addCodeRef() {
+      sectionProjects.appendChild(designProjects);
+      $('.graph').remove();
+      graph.appendChild(codeSkills);
+    }
+    coderBtn.addEventListener ("click", addCodeRef);
   
     });

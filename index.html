@@ -10,7 +10,7 @@
 
 <body>
   <div class="wrapper">
-    <header id="site-header">
+    <header id="site-header"> <!-- header -->
       <nav>
         <ul class="navigation">
           <li><a href="/" class="logo">Alla Roman</a></li>
@@ -20,10 +20,16 @@
       </nav>
     </header>
     <main id="site-main">
-      <section>
+      <section>  <!-- slider -->
         <div id="coder-designer-slider">
-          <h2 class="designer-title">Designer<button id="designer-btn">Show me more design</button></h2>
-          <h2 class="coder-title">Coder<button id="coder-btn">Show me more code</button></h2>
+          <div class="designer-title">
+            <h2 class="designer-h2">Designer</h2>
+            <button id="designer-btn">Show me more design</button>
+          </div>
+        <div class="coder-title">
+            <h2 class="coder-h2">Coder</h2>
+           <button id="coder-btn">Show me more code</button>
+        </div>
           <div class="left">
             <img src="./images/designer.png" alt="designer" class="left-picture">
             <div class="designer-text">
@@ -42,12 +48,12 @@
             </div>
         </div>
       </section>
-      <section class="about-me">
-        <h2>Über mich</h2>
-        <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+      <section class="about-me"> <!-- about me -->
+        <h2>Über mich</h2> 
+        <p>Lernbereit, motivert, neugierig. Es liegt mir am Herzen Dinge zu erschaffen. Durch Wordpress, aber mehr durch den Eifer Wordpress Templates maßgeschneidert verändern zu können, lernte ich zuerst HTML, CSS und Bootstrap. Ein 2-monatiger Bootcamp Full Stack WebDev mit Schwerpunkt JavaScript vermittelte mir die Logik und die praktischen Grundlagen dieser tollen Programmiersprache.</p>
       </section>
-      <section>
-        <h2>Skills</h2>
+      <section class="skills-code"> <!-- skills graph -->
+        <h2>Skills</h2> 
         <div class="graph">
            <div class="column-left">
               <div class="bar bar1">HTML, CSS</div>
@@ -55,21 +61,66 @@
               <div class="bar bar3">jQuery</div>
            </div>
             <div class="column-right">
-             <div class="bar bar4">Angular</div>
-             <div class="bar bar5">Typescript</div>
-             <div class="bar bar6">Bootstrap</div>
+             <div class="bar bar4">UI, UX Konzepte</div>
+             <div class="bar bar5">Photoshop</div>
+             <div class="bar bar6">Illustrator</div>
             </div>
         </div>
       </section>
-      <section class="projects">
+      <!-- <section class="skills-design"> 
+        <h2>Skills Design</h2> 
+        <div class="graph">
+           <div class="column-left">
+              <div class="bar bar1">Photoshop</div>
+              <div class="bar bar2">Illustrator</div>
+              <div class="bar bar3">Typografie</div>
+           </div>
+            <div class="column-right">
+             <div class="bar bar4">InDesign</div>
+             <div class="bar bar5">Konzept</div>
+             <div class="bar bar6">Fotografie</div>
+            </div>
+        </div>
+      </section> -->
+      <section class="projects"> <!-- projects-->
         <h2>Projekte</h2>
+        <div class="designer-projects">
+            <div class="single-des-project">
+                <div class="image-projects">
+                  <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
+                 </div>
+                 <p>Spiel über JavaScript</p>
+                 <p>- 15 Fragen</p>
+                 <p>- Vanilla JS</p>
+                 <p>- DOM Manipulation</p>
+            </div>
+            <div class="single-des-project">
+                <div class="image-projects">
+                <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
+                  </div>
+                  <p>Finde die Bar</p>
+                  <p>- Node, Express + express-ejs-layouts</p>
+                  <p>- MongoDB, Mongoose</p>
+                  <p>- Authorization, Authentication</p>
+                  <p>- Google maps</p>
+            </div>
+            <div class="single-des-project">
+                <div class="image-projects">
+                   <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
+                  </div>
+                  <p>Blog über Kunst</p>
+                  <p>- Node, Express</p>
+                  <p>- MongoDB, Mongoose</p>
+                  <p>- Angular</p>
+                  <p>- Authorization, Authentication</p>
+            </div>
+        </div>
       </section>
       <section>
-        <h2>Erfahrungen</h2>
       </section>
     </main>
     <footer id="site-footer">
-
+      Impresum
     </footer>
  </div> <!-- wrapper -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
