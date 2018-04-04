@@ -109,8 +109,8 @@ $(function(){
             <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
               </div>
               <p>Design Finde die Bar</p>
-              <p>- Node, Express + express-ejs-layouts</p>
-              <p>- MongoDB, Mongoose</p>
+              <p>- Express, express-ejs-layouts</p>
+              <p>- Node, MongoDB, Mongoose</p>
               <p>- Authorization, Authentication</p>
               <p>- Google maps</p>
         </div>
@@ -251,8 +251,8 @@ $(function(){
             <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
               </div>
               <p>Code Finde die Bar</p>
-              <p>- Node, Express + express-ejs-layouts</p>
-              <p>- MongoDB, Mongoose</p>
+              <p>- Express, express-ejs-layouts</p>
+              <p>- Node, MongoDB, Mongoose</p>
               <p>- Authorization, Authentication</p>
               <p>- Google maps</p>
         </div>
