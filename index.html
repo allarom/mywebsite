@@ -13,9 +13,9 @@
     <header id="site-header"> <!-- header -->
       <nav>
         <ul class="navigation">
-          <li><a href="/" class="logo">Alla Roman</a></li>
-          <li><a href="#"><img src="./images/email.png" alt="email" class="email-icon"></a></li>
-          <li><a href="#"><img src="./images/github_512x512.png" alt="github" class="github-icon"></a></li>
+          <li><a href="" class="logo">Alla Roman</a></li>
+          <li><a href="mailto:alla.roman.mail@gmail.com?Subject=Hello%20Alla" target="_top"><img src="./images/email.png" alt="email" class="email-icon"></a></li>
+          <li><a href="https://github.com/allarom"><img src="./images/github_512x512.png" alt="github" class="github-icon"></a></li>
         </ul>
       </nav>
     </header>
@@ -24,26 +24,26 @@
         <div id="coder-designer-slider">
           <div class="designer-title">
             <h2 class="designer-h2">Designer</h2>
-            <button id="designer-btn">Show me more design</button>
+            <button id="designer-btn">Mehr Design</button>
           </div>
         <div class="coder-title">
             <h2 class="coder-h2">Coder</h2>
-           <button id="coder-btn">Show me more code</button>
+           <button id="coder-btn">Mehr Code</button>
         </div>
+        <img src="./images/right-arrow.png" alt="arrow" class="arrow left-arrow">
+        <img src="./images/right-arrow.png" alt="arrow" class="arrow right-arrow">
           <div class="left">
             <img src="./images/designer.png" alt="designer" class="left-picture">
             <div class="designer-text">
-                <h2>Coder</h2>
-                <p>For the touchstart event this must be a list of the touch points that just became active with the current event.</p>
-                <p class="coder-second-paragraph">Gor the touchmove event this must be a list of the touch points that have moved since the last event.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt u</p>
+                <p class="slider-quote">First solve the problem. Then, write the code.</p>
+                <p class="coder-second-paragraph"></p>
               </div>
           </div>
           <div class="right">
             <img src="./images/coder.png" alt="coder" class="right-picture">
             <div class="coder-text">
-                <h2>Designer</h2>
-                <p>For the touchstart event this must be a list of the touch points that just became active with the current event.</p>
-                <p class="designer-second-paragraph">D gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquya</p>
+                <p class="slider-quote">Gott steckt im Detail.</p>
+                <p class="designer-second-paragraph slider-quote">Gutes Design löst Probleme auf ansprechende Art und Weise.</p>
               </div>
             </div>
         </div>
@@ -58,42 +58,48 @@
         <h2>Skills</h2> 
         <div class="graph">
            <div class="column-left">
-              <div class="bar bar1">HTML, CSS</div>
-              <div class="bar bar2">Vanilla JavaScript</div>
-              <div class="bar bar3">jQuery</div>
+            <p>HTML, CSS</p>
+            <div class="bar bar1"></div>
+            <p>Vanilla JavaScript</p>
+            <div class="bar bar2"></div>
+            <p>jQuery</p>
+            <div class="bar bar3"></div>
            </div>
             <div class="column-right">
-             <div class="bar bar4">UI, UX Konzepte</div>
-             <div class="bar bar5">Photoshop</div>
-             <div class="bar bar6">Illustrator</div>
+             <p>UI, UX Konzepte</p>
+             <div class="bar bar4"></div>
+             <p>Photoshop</p>
+             <div class="bar bar5"></div>
+             <p>Illustrator</p>
+             <div class="bar bar6"></div>
             </div>
         </div>
       </section>
       <section class="projects-container"> <!-- projects-->
         <h2>Projekte</h2>
         <div class="projects">
-            <div class="single-des-project">
+            <div class="single-project">
                 <div class="image-projects">
-                  <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
+                 <a href="https://allarom.github.io/quiz-game/"><img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects"></a>
                  </div>
                  <p>Spiel über JavaScript</p>
                  <p>- 15 Fragen</p>
                  <p>- Vanilla JS</p>
                  <p>- DOM Manipulation</p>
             </div>
-            <div class="single-des-project">
+            <div class="single-project">
                 <div class="image-projects">
-                <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
+                  <a href="https://mybars.herokuapp.com/"><img src="./images/my-bars.jpg" alt="my-bars" class="image-projects"></a>
                   </div>
                   <p>Finde die Bar</p>
-                  <p>- Node, Express + express-ejs-layouts</p>
-                  <p>- MongoDB, Mongoose</p>
+                  <p>- Express, express-ejs-layouts</p>
+                  <p>- Node, MongoDB, Mongoose</p>
                   <p>- Authorization, Authentication</p>
                   <p>- Google maps</p>
             </div>
-            <div class="single-des-project">
+            <div class="single-project">
                 <div class="image-projects">
-                   <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
+                  <a href="https://artyblog.herokuapp.com/"><img src="./images/art-blog.jpg" alt="art-blog" class="image-projects"></a>
                   </div>
                   <p>Blog über Kunst</p>
                   <p>- Node, Express</p>
@@ -108,7 +114,7 @@
       </section>
     </main>
     <footer id="site-footer">
-      Impresum
+      <p>Made by Alla Roman</p>
     </footer>
  </div> <!-- wrapper -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

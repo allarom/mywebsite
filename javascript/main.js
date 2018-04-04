@@ -16,6 +16,10 @@ $(function(){
       rightPicture.style.visibility = 'visible';
       $('.designer-title').fadeOut('slow');
       $('.coder-title').fadeIn('slow');
+
+      leftArr.style.visibility = 'visible';
+      $('.right-arrow').fadeOut('slow');
+      $('.left-arrow').fadeIn('slow');
   
     } else if  ( position <= 50) {
        // --- slider / displaying and hiding elements (left side)
@@ -27,6 +31,11 @@ $(function(){
       $('.coder-title').fadeOut('slow');
       coderText.style.visibility = 'visible';
       leftPicture.style.visibility = 'visible';
+
+      rightArr.style.visibility = 'visible';
+      $('.left-arrow').fadeOut('slow');
+      $('.right-arrow').fadeIn('slow');
+
    
       }
    }
@@ -36,6 +45,9 @@ $(function(){
     var leftPicture = sliderContainer.getElementsByClassName('left-picture')[0]; //
     var rightPicture = sliderContainer.getElementsByClassName('right-picture')[0]; //
     var coderText = sliderContainer.getElementsByClassName('coder-text')[0]; //
+
+    var leftArr= sliderContainer.getElementsByClassName('left-arrow')[0];
+    var rightArr= sliderContainer.getElementsByClassName('right-arrow')[0];
 
 
     // --- slider pictures according to mouse position 
@@ -47,14 +59,14 @@ $(function(){
    }, true)
 
     // --- slider mouseleave event 
-    sliderContainer.addEventListener("mouseleave", function(  ) {   
-        $('.designer-text').fadeOut('slow');
-        $('.coder-text').fadeOut('slow');
-        $('.right-picture').fadeIn('slow');
-        $('.left-picture').fadeIn('slow');
-        $('.designer-title').fadeIn('slow');
-        $('.coder-title').fadeIn('slow');
-      }, false);
+    // sliderContainer.addEventListener("mouseleave", function(  ) {   
+    //     $('.designer-text').fadeOut('slow');
+    //     $('.coder-text').fadeOut('slow');
+    //     $('.right-picture').fadeIn('slow');
+    //     $('.left-picture').fadeIn('slow');
+    //     $('.designer-title').fadeIn('slow');
+    //     $('.coder-title').fadeIn('slow');
+    //   }, false);
 
     // --- projects 
 
@@ -76,15 +88,21 @@ $(function(){
 
     designSkills.innerHTML =   
       `<div class="column-left">
-          <div class="bar bar1">Foto</div>
-          <div class="bar bar2">Foto</div>
-          <div class="bar bar3">Foto</div>
+        <p>Konzept</p>
+        <div class="bar bar1"></div>
+        <p>Photoshop</p>
+        <div class="bar bar2"></div>
+        <p>Illustrator</p>
+        <div class="bar bar3"></div>
       </div>
-       <div class="column-right">
-         <div class="bar bar4">UI, UX Konzepte</div>
-         <div class="bar bar5">Photoshop</div>
-         <div class="bar bar6">Illustrator</div>
-      </div>`
+      <div class="column-right">
+         <p>Typografie</p>
+         <div class="bar bar4"></div>
+         <p>UI, UX</p>
+         <div class="bar bar5"></div>
+         <p>InDesign</p>
+         <div class="bar bar6"></div>
+     </div>`;
     
 
     var projects = document.getElementsByClassName('projects')[0];
@@ -95,7 +113,7 @@ $(function(){
 
     designProjects.innerHTML =     
     ` 
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
               <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
              </div>
@@ -104,7 +122,7 @@ $(function(){
              <p>- Vanilla JS</p>
              <p>- DOM Manipulation</p>
         </div>
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
             <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
               </div>
@@ -114,7 +132,7 @@ $(function(){
               <p>- Authorization, Authentication</p>
               <p>- Google maps</p>
         </div>
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
                <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
               </div>
@@ -162,7 +180,7 @@ $(function(){
                 </div>
                 <div class="text-elements">
                    <h3>Fotografin / Grafikdesignerin</h3>
-                   <p class="exp-content">Springlane, Onlineshop für Küchenutensilien, Düsseldorf</p>
+                   <p class="exp-content first-sent">Springlane, Onlineshop für Küchenutensilien, Düsseldorf</p>
                    <ul>
                       <li class="code-tags">Durchführung von Foodshootings</li>
                        <li class="code-tags">Bildbearbeitung</li>
@@ -217,16 +235,22 @@ $(function(){
     codeSkills.setAttribute("class", "graph");
 
     codeSkills.innerHTML =   
-    `<div class="column-left">
-        <div class="bar bar1">HTML, CSS</div>
-        <div class="bar bar2">Vanilla JavaScript</div>
-        <div class="bar bar3">jQuery</div>
-     </div>
-    <div class="column-right">
-       <div class="bar bar4">Angular</div>
-       <div class="bar bar5">TypeScript</div>
-       <div class="bar bar6">Bootstrap</div>
-    </div>`
+    ` <div class="column-left">
+          <p>HTML, CSS</p>
+          <div class="bar bar1"></div>
+          <p>Vanilla JavaScript</p>
+          <div class="bar bar2"></div>
+          <p>jQuery</p>
+          <div class="bar bar3"></div>
+       </div>
+        <div class="column-right">
+           <p>Angular</p>
+           <div class="bar bar4"></div>
+           <p>Node</p>
+           <div class="bar bar5"></div>
+           <p>Express</p>
+           <div class="bar bar6"></div>
+       </div>`;
     
     // --- projects
     var projects = document.getElementsByClassName('projects')[0];
@@ -237,7 +261,7 @@ $(function(){
 
     codeProjects.innerHTML =     
     ` 
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
               <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
              </div>
@@ -246,7 +270,7 @@ $(function(){
              <p>- Vanilla JS</p>
              <p>- DOM Manipulation</p>
         </div>
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
             <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
               </div>
@@ -256,7 +280,7 @@ $(function(){
               <p>- Authorization, Authentication</p>
               <p>- Google maps</p>
         </div>
-        <div class="single-des-project">
+        <div class="single-project">
             <div class="image-projects">
                <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
               </div>
