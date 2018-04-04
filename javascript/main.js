@@ -263,7 +263,7 @@ $(function(){
     ` 
         <div class="single-project">
             <div class="image-projects">
-              <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
+             <a href="https://allarom.github.io/quiz-game/"><img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects"></a>
              </div>
              <p>Code Spiel über JavaScript</p>
              <p>- 15 Fragen</p>
@@ -272,7 +272,7 @@ $(function(){
         </div>
         <div class="single-project">
             <div class="image-projects">
-            <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
+            <a href="https://mybars.herokuapp.com/"><img src="./images/my-bars.jpg" alt="my-bars" class="image-projects"></a>
               </div>
               <p>Code Finde die Bar</p>
               <p>- Express, express-ejs-layouts</p>
@@ -282,7 +282,7 @@ $(function(){
         </div>
         <div class="single-project">
             <div class="image-projects">
-               <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
+              <a href="https://artyblog.herokuapp.com/"><img src="./images/art-blog.jpg" alt="art-blog" class="image-projects"></a>
               </div>
               <p>Code Blog über Kunst</p>
               <p>- Node, Express</p>
