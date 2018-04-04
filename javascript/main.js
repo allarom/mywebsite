@@ -125,16 +125,75 @@ $(function(){
               <p>- Authorization, Authentication</p>
         </div>`;
 
-        
+        // --- exp
+
+        var expCont = document.getElementsByClassName('exp-container')[0];
+
+        var desExp = document.createElement("div");
+        desExp.setAttribute("class", "exp");
+    
+        desExp.innerHTML =   
+        `
+                          <h2>Erfahrungen</h2>
+                <div class="exp-block">
+                  <div class="date-elements">
+                    <p class="date"></p>09/2016 Jetzt</p>
+                 </div>
+                 <div class="text-elements">
+                   <h3>Marketingleiterin und Grafikdesignerin</h3>
+                   <p class="exp-content first-sent">Balter GmbH, eCommerce Sicherheitstechnik, Langenfeld</p>
+                   <ul>
+                      <li class="code-tags">Planung und Entwicklung der Werbemaßnahmen</li>
+                       <li class="code-tags">Kataloge</li>
+                       <li class="code-tags">Flyer</li>
+                       <li class="code-tags">Newsletter</li>
+                       <li class="code-tags">Erstellung der Verpackungen</li>
+                       <li class="code-tags">Reinzeichnung</li>
+                       <li class="code-tags">Plannung und Gestaltung des Messestandes</li>
+                       <li class="code-tags">Artikelpflege in Prestashop</li>
+                       <li class="code-tags">Kommunikation mit externen Partnern</li>
+                   </ul>
+                 </div>
+                </div>
+             </div>
+             <div class="exp-block">
+                 <div class="date-elements">
+                   <p class="date"></p>10/2015 08/2016</p>
+                </div>
+                <div class="text-elements">
+                   <h3>Fotografin / Grafikdesignerin</h3>
+                   <p class="exp-content">Springlane, Onlineshop für Küchenutensilien, Düsseldorf</p>
+                   <ul>
+                      <li class="code-tags">Durchführung von Foodshootings</li>
+                       <li class="code-tags">Bildbearbeitung</li>
+                       <li class="code-tags">Strenge Einhaltung der Fristen</li>
+                       <li class="code-tags">Newsletter Erstellung</li>
+                       <li class="code-tags">Produktpflege im Shop</li>
+                  </ul>
+                </div>
+             </div>
+             <div class="exp-block">
+                 <div class="date-elements">
+                   <p class="date"></p>2008 2012</p>
+                </div>
+                <div class="text-elements">
+                   <h3>Studium</h3>
+                   <p class="exp-content">BA Kommunikationsdesign, Hochschule Niederrhein</p>
+                </div>
+
+        `;
+    
     // --- add design references
     var designerBtn = document.getElementById('designer-btn');
     function addDesignRef() {
         $('.about-me').remove();
         $('.graph').remove();
         $('.projects').remove();
+        $('.exp').remove();
         aboutCont.appendChild(designAbout);
         skills.appendChild(designSkills);
         sectionProjects.appendChild(designProjects);
+        expCont.appendChild(desExp);
 
     }
 
@@ -208,11 +267,10 @@ $(function(){
               <p>- Authorization, Authentication</p>
         </div>`;
      
-    // --- projects
+    // --- exp
 
     var expCont = document.getElementsByClassName('exp-container')[0];
 
-    // --- create new graph bar (code)
     var codeExp = document.createElement("div");
     codeExp.setAttribute("class", "exp");
 
@@ -225,7 +283,7 @@ $(function(){
          </div>
          <div class="text-elements">
            <h3>Bootcamp Ironhack, Barcelona</h3>
-           <p class="exp-content">9-Wöchiger Intensivworkshop Full Stack WebDev mit Schwerpunkt JavaScript </p>
+           <p class="exp-content first-sent">9-Wöchiger Intensivworkshop Full Stack WebDev mit Schwerpunkt JavaScript </p>
            <ul>
               <li class="code-tags">HTML, CSS</li>
                <li class="code-tags">Vanilla&nbsp;JavaScript</li>
@@ -253,7 +311,7 @@ $(function(){
            <h3>Erstellung der Wordpress Webseiten, Anpassung der Templates</h3>
            <p class="exp-content">Gemeinsame Planung der Webseite mit dem Kunden</p>
            <p class="exp-content">SEO Optimierung und Security Maßnahmen mit Wordpress Tools</p>
-           <p class="exp-content">CSS ANpassungen der Wordpress Templates</p>
+           <p class="exp-content">CSS Anpassungen der Wordpress Templates</p>
         </div>
      </div>
      <div class="exp-block">
@@ -278,6 +336,7 @@ $(function(){
       $('.graph').remove();
       $('.about-me').remove();
       $('.projects').remove();
+      $('.exp').remove();
       skills.appendChild(codeSkills);
       aboutCont.appendChild(codeAbout);
       sectionProjects.appendChild(codeProjects);

@@ -299,8 +299,6 @@ section {
   height: auto;
 }
 
-
-
 .projects {
   display: flex;
   justify-content: space-between;
@@ -351,6 +349,10 @@ section {
 
 p.exp-content:first-child {
   margin-bottom: 2rem;
+}
+
+.first-sent {
+  margin-bottom: 1rem;
 }
 
 @-webkit-keyframes bar-before{
