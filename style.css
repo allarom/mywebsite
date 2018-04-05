@@ -260,6 +260,8 @@ section {
 
 .about-me span {
   text-decoration: underline;
+ 
+  font-weight: 500;
 }
 /* ---- main ---- */
 
@@ -432,7 +434,7 @@ p.exp-content:first-child {
 
 @media (min-width: 768px) {
   .wrapper {
-    max-width: 900px;
+    max-width: 980px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
