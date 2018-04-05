@@ -18,21 +18,36 @@ body, ul, li, div, button, h1, h2, h3, h4, span {
 
 body {
   color: #111;
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 1.1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 1rem;
   line-height: 1.5;
   background-color: rgb(223, 223, 223);
 }
 
-h1 {}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  color: rgb(56, 56, 56);
+}
 
 h2 {
-  font-size: 1.1rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
+  color: rgb(56, 56, 56);
 }
 
 h3 {
-  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(56, 56, 56);
 }
 
 p {
@@ -241,6 +256,10 @@ section {
 .designer-second-paragraph {
   position: absolute;
   top: 4rem;
+}
+
+.about-me span {
+  text-decoration: underline;
 }
 /* ---- main ---- */
 
