@@ -29,7 +29,6 @@ h1 {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
   color: rgb(56, 56, 56);
 }
 
@@ -194,10 +193,12 @@ section {
   outline: none;
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 1rem;
   display: block;
   margin-top: 2rem;
-  padding: 5px;
+  padding: 8px;
   background-color:  rgb(107, 128, 247);
   color: white;
 }
@@ -217,10 +218,12 @@ section {
   outline: none;
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 1rem;
   display: block;
   margin-top: 2rem;
-  padding: 5px;
+  padding: 8px;
   background-color: rgb(107, 128, 247);
   color: white;
 }
@@ -246,16 +249,18 @@ section {
 }
 
 .slider-quote {
-  font-size: 1.2rem;
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  font-size: 1.7rem;
   font-weight: 300;
   position: absolute;
   top: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.9rem;
 }
 
 .designer-second-paragraph {
   position: absolute;
-  top: 4rem;
+  top: 6rem;
 }
 
 .about-me span {
@@ -333,7 +338,7 @@ section {
 }
 
 .bar3::after{
-  max-width: 65%;
+  max-width: 70%;
 }
 
 .bar4::after{
@@ -341,11 +346,11 @@ section {
 }
 
 .bar5::after{
-  max-width: 75%;
+  max-width: 95%;
 }
 
 .bar6::after{
-  max-width: 82%;
+  max-width: 90%;
 }
 
 

@@ -78,8 +78,8 @@ $(function(){
     designAbout.setAttribute("class", "about-me");
 
     designAbout.innerHTML =   
-      `<h2>Über mich</h2> 
-       <p>Design Lernbereit, motivert, neugierig. Es liegt mir am Herzen Dinge zu erschaffen.</p>
+      `<p>Gutes Design ist ein gelungenes Konzept im formschönen Gewand. Gute Designer sind in der Lage Ziele und Probleme der Kunden zu erkennen, dessen sich die Kunden manchmal selbst nicht bewusst sind. 
+       Ich interessiere mich für: <span>gute Fotografie,</span> <span>auffallende Typografie,</span> <span>fesselnde Texte,</span> <span>Interaktion</span></p>
       `
 
     // --- create new graph bar (design)
@@ -225,7 +225,7 @@ $(function(){
 
    codeAbout.innerHTML =   
       `<h2>Über mich</h2> 
-       <p>Code Lernbereit, motivert, neugierig. Es liegt mir am Herzen Dinge zu erschaffen.</p>
+       <p>Guter Code ist gut lesbar, strukturiert, konsequent und elegant. Ich interessiere mich für Frontend, als auch für Backend. Das Programmieren ist ein Handwerk und wie in jedem anderen Handwerk kommt man auch im Programmieren nur mit Übung weiter. </p>
       `
     // --- create graph bars
     var skills = document.getElementsByClassName('skills')[0];
@@ -245,11 +245,11 @@ $(function(){
        </div>
         <div class="column-right">
            <p>Angular</p>
-           <div class="bar bar4"></div>
+           <div class="bar bar3"></div>
            <p>Node</p>
-           <div class="bar bar5"></div>
+           <div class="bar bar3"></div>
            <p>Express</p>
-           <div class="bar bar6"></div>
+           <div class="bar bar3"></div>
        </div>`;
     
     // --- projects
