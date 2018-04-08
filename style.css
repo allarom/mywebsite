@@ -464,6 +464,11 @@ p.exp-content:first-child {
   .coder-second-paragraph {
     display: none;
   }
+  .slider-quote {
+    font-size: 1.15rem;
+    line-height: 1.2rem;
+    top: 1rem;
+  }
 }
 
  /*---- mobile ---- */
@@ -543,6 +548,12 @@ p.exp-content:first-child {
 /* --- projects --- */
 .projects {
   justify-content: center;
+}
+
+.slider-quote {
+  font-size: 1rem;
+  line-height: 1rem;
+  top: 1rem;
 }
 
 
