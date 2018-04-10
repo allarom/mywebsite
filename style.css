@@ -376,7 +376,10 @@ section {
 
 .single-project {
   margin-bottom: 2rem;
+
 }
+
+
 /* --- experiences ---*/
 
 .exp-block {
@@ -454,6 +457,16 @@ p.exp-content:first-child {
   margin: 0 auto;
 }
 
+.single-project {
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 0 30%;
+
+}
+
+
+
 
 }
 
@@ -469,6 +482,14 @@ p.exp-content:first-child {
     font-size: 1.15rem;
     line-height: 1.2rem;
     top: 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .single-project {
+    flex: 1 0 100%;
   }
 }
 

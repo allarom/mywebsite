@@ -117,7 +117,7 @@ $(function(){
             <div class="image-projects">
               <img src="./images/redesign-webseite.jpg" alt="redesign" class="image-projects">
              </div>
-             <p>Redesign der Webseite balter.de unter Berücksichtigung des Kundenfeedbacks</p>
+             <b>Redesign der Webseite balter.de unter Berücksichtigung des Kundenfeedbacks</b>
              <p>- Umplatzierung der Anmeldung</p>
              <p>- Vanilla JS</p>
              <p>- Umgestaltung des Sliders</p>
@@ -126,7 +126,7 @@ $(function(){
             <div class="image-projects">
             <img src="./images/messe-security-essen.jpg" alt="messe" class="image-projects">
               </div>
-              <p>Planung und Gestaltung des Messeauftritts und Werbemittel</p>
+              <b>Planung und Gestaltung des Messeauftritts und Werbemittel</b>
               <p>- Ausarbeitung des Layouts, Reinzeichnung</p>
               <p>- Kommunikation mit Messebauer, Druckerei</p>
               <p>- Videodreh mit einem externen Mitarbeiter</p>
@@ -135,7 +135,7 @@ $(function(){
             <div class="image-projects">
                <img src="./images/katalog.jpg" alt="art-blog" class="image-projects">
               </div>
-              <p>Kataloge, Konzeption und Reinzeichnung </p>
+              <b>Kataloge, Konzeption und Reinzeichnung </b>
               <p>- Erstellung von Inhalten, Beschaffung und 
               Bearbeitung des Bildmaterials</p>
               <p>- Korrekturschleifen mit zuständigen Lektoren</p>
@@ -264,7 +264,7 @@ $(function(){
             <div class="image-projects">
              <a href="https://allarom.github.io/quiz-game/"><img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects"></a>
              </div>
-             <p>Code Spiel über JavaScript</p>
+             <b>Spiel über JavaScript</b>
              <p>- 15 Fragen</p>
              <p>- Vanilla JS</p>
              <p>- DOM Manipulation</p>
@@ -273,7 +273,7 @@ $(function(){
             <div class="image-projects">
             <a href="https://mybars.herokuapp.com/"><img src="./images/my-bars.jpg" alt="my-bars" class="image-projects"></a>
               </div>
-              <p>Code Finde die Bar</p>
+              <b>Finde die Bar</b>
               <p>- Express, express-ejs-layouts</p>
               <p>- Node, MongoDB, Mongoose</p>
               <p>- Authorization, Authentication</p>
@@ -283,7 +283,7 @@ $(function(){
             <div class="image-projects">
               <a href="https://artyblog.herokuapp.com/"><img src="./images/art-blog.jpg" alt="art-blog" class="image-projects"></a>
               </div>
-              <p>Code Blog über Kunst</p>
+              <b>Blog über Kunst</b>
               <p>- Node, Express</p>
               <p>- MongoDB, Mongoose</p>
               <p>- Angular</p>
