@@ -366,6 +366,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  hyphens: auto;
 }
 
 .projects-container {
@@ -531,11 +532,16 @@ p.exp-content:first-child {
  .coder-text {
    font-size: 0.9rem;
    line-height: 1rem;
+   width: 43%;
+   right: 1rem;
  }
 
  .designer-text {
   font-size: 0.9rem;
   line-height: 1rem;
+  width: 42%;
+  left: 1rem;
+  
 }
 .designer-second-paragraph {
   display: none;
@@ -554,6 +560,10 @@ p.exp-content:first-child {
   font-size: 1rem;
   line-height: 1rem;
   top: 1rem;
+}
+
+.about-me p {
+  font-size: 1rem;
 }
 
 

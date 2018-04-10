@@ -115,32 +115,31 @@ $(function(){
     ` 
         <div class="single-project">
             <div class="image-projects">
-              <img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects">
+              <img src="./images/redesign-webseite.jpg" alt="redesign" class="image-projects">
              </div>
-             <p>Design Spiel über JavaScript</p>
-             <p>- 15 Fragen</p>
+             <p>Redesign der Webseite balter.de unter Berücksichtigung des Kundenfeedbacks</p>
+             <p>- Umplatzierung der Anmeldung</p>
              <p>- Vanilla JS</p>
-             <p>- DOM Manipulation</p>
+             <p>- Umgestaltung des Sliders</p>
         </div>
         <div class="single-project">
             <div class="image-projects">
-            <img src="./images/my-bars.jpg" alt="my-bars" class="image-projects">
+            <img src="./images/messe-security-essen.jpg" alt="messe" class="image-projects">
               </div>
-              <p>Design Finde die Bar</p>
-              <p>- Express, express-ejs-layouts</p>
-              <p>- Node, MongoDB, Mongoose</p>
-              <p>- Authorization, Authentication</p>
-              <p>- Google maps</p>
+              <p>Planung und Gestaltung des Messeauftritts und Werbemittel</p>
+              <p>- Ausarbeitung des Layouts, Reinzeichnung</p>
+              <p>- Kommunikation mit Messebauer, Druckerei</p>
+              <p>- Videodreh mit einem externen Mitarbeiter</p>
         </div>
         <div class="single-project">
             <div class="image-projects">
-               <img src="./images/art-blog.jpg" alt="art-blog" class="image-projects">
+               <img src="./images/katalog.jpg" alt="art-blog" class="image-projects">
               </div>
-              <p>Design Blog über Kunst</p>
-              <p>- Node, Express</p>
-              <p>- MongoDB, Mongoose</p>
-              <p>- Angular</p>
-              <p>- Authorization, Authentication</p>
+              <p>Kataloge, Konzeption und Reinzeichnung </p>
+              <p>- Erstellung von Inhalten, Beschaffung und 
+              Bearbeitung des Bildmaterials</p>
+              <p>- Korrekturschleifen mit zuständigen Lektoren</p>
+              <p>- Druckvorbereitu</p>
         </div>`;
 
         // --- exp
