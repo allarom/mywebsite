@@ -428,7 +428,12 @@ p.exp-content:first-child {
 
 /* --- footer ---*/
 
+.impressum {
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 
+}
 
 @-webkit-keyframes bar-before{
   0%{
