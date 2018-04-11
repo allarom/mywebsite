@@ -119,7 +119,6 @@ $(function(){
              </div>
              <b>Redesign der Webseite balter.de unter Berücksichtigung des Kundenfeedbacks</b>
              <p>- Umplatzierung der Anmeldung</p>
-             <p>- Vanilla JS</p>
              <p>- Umgestaltung des Sliders</p>
         </div>
         <div class="single-project">
@@ -265,7 +264,6 @@ $(function(){
              <a href="https://allarom.github.io/quiz-game/"><img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects"></a>
              </div>
              <b>Spiel über JavaScript</b>
-             <p>- 15 Fragen</p>
              <p>- Vanilla JS</p>
              <p>- DOM Manipulation</p>
         </div>
