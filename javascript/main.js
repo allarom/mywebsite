@@ -58,16 +58,6 @@ $(function(){
       eve.stopPropagation ();
    }, true)
 
-    // --- slider mouseleave event 
-    // sliderContainer.addEventListener("mouseleave", function(  ) {   
-    //     $('.designer-text').fadeOut('slow');
-    //     $('.coder-text').fadeOut('slow');
-    //     $('.right-picture').fadeIn('slow');
-    //     $('.left-picture').fadeIn('slow');
-    //     $('.designer-title').fadeIn('slow');
-    //     $('.coder-title').fadeIn('slow');
-    //   }, false);
-
     // --- projects 
 
     // --- design
@@ -89,15 +79,15 @@ $(function(){
     designSkills.innerHTML =   
       `<div class="column-left">
         <p>Konzept</p>
-        <div class="bar bar1"></div>
+        <div class="bar bar6"></div>
         <p>Photoshop</p>
-        <div class="bar bar2"></div>
+        <div class="bar bar5"></div>
         <p>Illustrator</p>
-        <div class="bar bar3"></div>
+        <div class="bar bar6"></div>
       </div>
       <div class="column-right">
          <p>Typografie</p>
-         <div class="bar bar4"></div>
+         <div class="bar bar6"></div>
          <p>UI, UX</p>
          <div class="bar bar5"></div>
          <p>InDesign</p>
@@ -125,8 +115,8 @@ $(function(){
             <div class="image-projects">
             <img src="./images/messe-security-essen.jpg" alt="messe" class="image-projects">
               </div>
-              <b>Planung und Gestaltung des Messeauftritts und Werbemittel</b>
-              <p>- Ausarbeitung des Layouts, Reinzeichnung</p>
+              <b>Planung und Gestaltung der Messeauftritte und Werbemittel</b>
+              <p>- Planung des Messestandes, Reinzeichnung</p>
               <p>- Kommunikation mit Messebauer, Druckerei</p>
               <p>- Videodreh mit einem externen Mitarbeiter</p>
         </div>
@@ -138,7 +128,7 @@ $(function(){
               <p>- Erstellung von Inhalten, Beschaffung und 
               Bearbeitung des Bildmaterials</p>
               <p>- Korrekturschleifen mit zuständigen Lektoren</p>
-              <p>- Druckvorbereitu</p>
+              <p>- Druckvorbereitung</p>
         </div>`;
 
         // --- exp
@@ -222,8 +212,7 @@ $(function(){
     codeAbout.setAttribute("class", "about-me");
 
    codeAbout.innerHTML =   
-      `<h2>Über mich</h2> 
-       <p>Guter Code ist gut lesbar, strukturiert, konsequent und elegant. Ich interessiere mich für Frontend, als auch für Backend.  </p>
+      `<p>Guter Code ist gut lesbar, strukturiert, konsequent und elegant. Ich interessiere mich für Frontend, als auch für Backend.  </p>
       `
     // --- create graph bars
     var skills = document.getElementsByClassName('skills')[0];
@@ -258,7 +247,16 @@ $(function(){
     codeProjects.setAttribute("class", "projects");
 
     codeProjects.innerHTML =     
-    ` 
+       ` <div class="single-project">
+            <div class="image-projects">
+              <a href="https://artyblog.herokuapp.com/"><img src="./images/art-blog.jpg" alt="art-blog" class="image-projects"></a>
+              </div>
+              <b>Blog über Kunst</b>
+              <p>- Node, Express</p>
+              <p>- MongoDB, Mongoose</p>
+              <p>- Angular</p>
+              <p>- Authorization, Authentication</p>
+        </div>
         <div class="single-project">
             <div class="image-projects">
              <a href="https://allarom.github.io/quiz-game/"><img src="./images/javascript-quiz.jpg" alt="javascript-quiz-project" class="image-projects"></a>
@@ -276,19 +274,9 @@ $(function(){
               <p>- Node, MongoDB, Mongoose</p>
               <p>- Authorization, Authentication</p>
               <p>- Google maps</p>
-        </div>
-        <div class="single-project">
-            <div class="image-projects">
-              <a href="https://artyblog.herokuapp.com/"><img src="./images/art-blog.jpg" alt="art-blog" class="image-projects"></a>
-              </div>
-              <b>Blog über Kunst</b>
-              <p>- Node, Express</p>
-              <p>- MongoDB, Mongoose</p>
-              <p>- Angular</p>
-              <p>- Authorization, Authentication</p>
         </div>`;
      
-    // --- exp
+    // --- experience
 
     var expCont = document.getElementsByClassName('exp-container')[0];
 
@@ -341,9 +329,7 @@ $(function(){
         </div>
         <div class="text-elements">
            <h3>Selbständiges Lernen HTML, CSS</h3>
-           <p class="exp-content">Video2Brain</p>
-           <p class="exp-content">Lynda.com</p>
-           <p class="exp-content">VHS Kurs</p>
+           <p class="exp-content">Video2Brain, Lynda.com, VHS Kurs</p>
         </div>
     `;
 
